@@ -1,0 +1,308 @@
+{
+  "git.allowNoVerifyCommit": true,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "file-icons-colourless",
+  "editor.fontFamily": "Fira Code",
+  //"editor.tokenColorCustomizations": {
+  //  "[*Light*]": {
+  //    "textMateRules": [
+  //      {
+  //        "scope": [
+  //          "comment",
+  //          "comment.line",
+  //          "comment.block",
+  //          "comment.block.documentation"
+  //        ],
+  //        "settings": {
+  //          "fontStyle": "italic"
+  //        }
+  //      }
+  //    ]
+  //  },
+  //  "[*Dark*]": {
+  //    "textMateRules": [
+  //      {
+  //        "scope": [
+  //          "comment",
+  //          "comment.line",
+  //          "comment.block",
+  //          "comment.block.documentation"
+  //        ],
+  //        "settings": {
+  //          "fontStyle": "italic"
+  //        }
+  //      }
+  //    ]
+  //  },
+  //},
+  "editor.fontLigatures": true,
+  "files.exclude": {
+    "": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.idea": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "projectManager.git.baseFolders": ["/home/pedro/Workspace"],
+  "projectManager.sortList": "Recent",
+  // VIM extensions
+  "vim.easymotion": true,
+  // VIM configs
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
+  //VIM Keymaps
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // File explorer -- keybindings.json
+    // Create editor splits -- keybindings.json
+
+    // Move between tabs
+    {
+      "before": ["H"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["L"],
+      "commands": [":bnext"]
+    },
+    // Move between panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+
+    // Create Splits
+    {
+      "before": ["<leader>", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // Show docs
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.showHover"]
+    },
+    // Jump diagnostics
+    {
+      "before": ["<leader>", "["],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", "]"],
+      "commands": ["editor.action.marker.next"]
+    },
+    // REFACTORS
+    //     reformat
+    {
+      "before": ["<leader>", "r", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["editor.action.refactor"]
+    },
+    //    rename
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    // Remove uneeded imports
+    {
+      "before": ["<leader>", "r", "i"],
+      "commands": ["editor.action.organizeImports"]
+    },
+    // CODE NAV
+    // Find usages
+    {
+      "before": ["<leader>", "f", "u"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    // Go def
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.goToDeclaration"] // editor.action.goToImplementation
+    },
+    {
+      "before": ["<leader>", "q", "f"],
+      "commands": ["editor.action.quickFix"]
+    },
+    // editor.action.triggerSuggest, workbench.action.gotoSymbol
+    //{
+    //  "before": ["H"],
+    //  "after": ["0"]
+    //},
+    //{
+    //  "before": ["L"],
+    //  "after": ["$"]
+    //}
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.terminal.toggleTerminal"
+  ],
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 12,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "cSpell.userWords": [
+    "approximators",
+    "checkpointing",
+    "Pietzuch",
+    "RLHF",
+    "stochasticity",
+    "subexpression"
+  ],
+  "explorer.confirmDelete": false,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.synctex(busy)",
+    "*.synctex.gz(busy)",
+    "*.nav",
+    "*.cut",
+    "*.synctex.gz"
+  ],
+  "editor.rulers": [100],
+  "todo-tree.highlights.enabled": false,
+  "todo-tree.general.rootFolder": "${workspaceFolder}",
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+    ],
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE",
+      "color": "#1e2030",
+      "backgroundColor": "#a6da95"
+    },
+    {
+      "text": "TODO",
+      "color": "#1e2030",
+      "backgroundColor": "#eed49f"
+    },
+    {
+      "text": "FIXME",
+      "color": "#1e2030",
+      "backgroundColor": "#ed8796"
+    }
+  ],
+  "C_Cpp.updateChannel": "Insiders",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "jupyter.askForKernelRestart": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+  "python.analysis.fixAll": [
+    "source.unusedImports"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+
+  "editor.inlineSuggest.enabled": true,
+  //"C_Cpp.default.compilerPath": "/usr/bin/clang-14",
+  //"clangd.path": "/home/p.silvestre/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+  //"clangd.arguments": [
+  //  "--header-insertion=never",
+  //  "--compile-commands-dir=${workspaceFolder}/",
+  //  "--query-driver=**"
+  //],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "git.confirmSync": false,
+  "todohighlight.isEnable": true,
+  "explorer.confirmDragAndDrop": false,
+  "clangd.path": "/home/p.silvestre/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.menuBarVisibility": "toggle",
+  "cSpell.enabled": true,
+  "cSpell.language": "en-GB",
+  "cSpell.enableFiletypes": [
+    "!python",
+    "!scala",
+    "tex"
+  ],
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "references.preferredLocation": "view",
+  "workbench.activityBar.location": "hidden",
+  "github.copilot.editor.enableAutoCompletions": true
+}
